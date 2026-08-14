@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wrenfield Studio — Making Independent Businesses Look Established</title>
+<meta name="description" content="Wrenfield Studio is a premium digital and creative studio based in Norfolk, serving independent UK businesses with website design, print, and ongoing care — helping you look as established as the brands you compete with." />
+<meta name="theme-color" content="#0f2438" />
+<link rel="icon" type="image/svg+xml" href="/assets/img/mark.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0f2438', 'ink-2': '#16324d', 'ink-deep': '#081420',
+          brass: '#c6a15b', 'brass-light': '#e4c989', 'brass-dark': '#9c7a3e',
+          ivory: '#faf6ee', 'ivory-dim': '#f1e9d8',
+          charcoal: '#1f1f1f', forest: '#1f3a2e',
+          stone: '#e1d8c4', 'stone-2': '#cbb99b'
+        },
+        fontFamily: {
+          display: ['Fraunces', 'ui-serif', 'serif'],
+          sans: ['Inter', 'ui-sans-serif', 'sans-serif']
+        }
+      }
+    }
+  };
+</script>
+<link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body class="bg-ivory text-charcoal">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-brass focus:text-ink focus:px-4 focus:py-2">Skip to content</a>
+
+<!-- NAV -->
+<header class="site-nav">
+  <div class="max-w-6xl mx-auto px-6 md:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="/assets/img/mark.svg" alt="Wrenfield Studio" class="h-9 w-9" />
+      <span class="font-display text-lg tracking-wide text-ink">WRENFIELD <span class="text-brass-dark">STUDIO</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden md:block">
+      <a href="contact.html" class="btn btn-brass">Request a Quote</a>
+    </div>
+    <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden relative w-8 h-6">
+      <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ink"></span>
+      <span class="hamburger-line mid absolute left-0 top-1/2 -translate-y-1/2 w-8 h-[1.5px] bg-ink"></span>
+      <span class="hamburger-line bottom absolute left-0 bottom-0 w-8 h-[1.5px] bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobile-panel" class="md:hidden px-6 pb-2">
+    <div class="flex flex-col gap-4 py-4 border-t border-stone">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-brass w-fit mt-2">Request a Quote</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="panel-ink relative">
+    <div class="grain"></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8 pt-24 pb-28 md:pt-32 md:pb-36 relative">
+      <p class="eyebrow on-dark">Norfolk, UK &middot; Serving Independent Businesses Nationwide</p>
+      <h1 class="font-display text-[2.75rem] leading-[1.05] md:text-7xl md:leading-[1.03] tracking-[-0.02em] mt-6 max-w-3xl">
+        Making independent businesses look established.
+      </h1>
+      <p class="mt-8 max-w-xl text-[1.05rem] leading-[1.75] text-ivory/80">
+        Wrenfield Studio is a boutique digital and creative studio for ambitious independent businesses — websites, print, and ongoing care, considered and built the way a much larger agency would, without the overhead.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a href="contact.html" class="btn btn-brass">Request a Quote</a>
+        <a href="portfolio.html" class="btn btn-ghost">View our work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE WORK WITH -->
+  <section class="bg-ivory-dim border-b border-stone">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-10 flex flex-col md:flex-row md:items-center gap-4 md:gap-10">
+      <p class="eyebrow shrink-0">Built for independent businesses in</p>
+      <div class="flex flex-wrap gap-x-8 gap-y-2 font-display text-lg text-ink-2">
+        <span>Hospitality</span>
+        <span class="text-stone-2">&middot;</span>
+        <span>Retail</span>
+        <span class="text-stone-2">&middot;</span>
+        <span>Trades</span>
+        <span class="text-stone-2">&middot;</span>
+        <span>Professional Services</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES MENU -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-6 md:px-8">
+      <div class="reveal">
+        <p class="eyebrow">What We Do</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4">A full studio, without the overhead.</h2>
+      </div>
+
+      <div class="mt-14 divide-y divide-stone border-t border-b border-stone">
+        <a href="services.html#website-design" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">Website Design &amp; Development</span>
+            <span class="text-sm text-charcoal/70">Custom, professional websites built to convert visitors into enquiries.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a href="services.html#poster-design" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">Poster Design</span>
+            <span class="text-sm text-charcoal/70">Print-ready posters for promotions, events, and campaigns.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a href="services.html#banner-design" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">Banner Design</span>
+            <span class="text-sm text-charcoal/70">Physical and digital banners that carry your brand consistently.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a href="services.html#qr-integration" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">QR Code Integration</span>
+            <span class="text-sm text-charcoal/70">Connecting your print materials straight through to digital pages.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a href="services.html#quote-forms" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">Contact &amp; Quote Request Forms</span>
+            <span class="text-sm text-charcoal/70">Custom enquiry forms so customers can reach you directly.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a href="services.html#ecommerce" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">E-commerce Websites</span>
+            <span class="text-sm text-charcoal/70">Online stores and checkout pages built to sell.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a href="services.html#care-plans" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
+          <span>
+            <span class="font-display text-xl text-ink block">Ongoing Maintenance &amp; Care Plans</span>
+            <span class="text-sm text-charcoal/70">Monthly care to keep your site secure, updated, and fast.</span>
+          </span>
+          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO TEASER -->
+  <section class="py-24 md:py-32 bg-ivory-dim border-y border-stone">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 max-w-xl">A studio built on craft, proven in practice.</h2>
+        </div>
+        <p class="max-w-sm text-sm text-charcoal/70 leading-relaxed">Our first client project — a dental practice website — launches soon. Until then, here's the calibre of work you can expect.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-8">
+        <!-- Website mockup -->
+        <div class="reveal">
+          <div class="frame-browser">
+            <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="p-5 bg-ivory">
+              <div class="flex items-center justify-between mb-4">
+                <div class="font-display text-sm text-ink">Marram &amp; Co.</div>
+                <div class="flex gap-2">
+                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
+                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
+                </div>
+              </div>
+              <div class="h-20 rounded-sm bg-ink-2 mb-3"></div>
+              <div class="h-2.5 w-2/3 bg-stone rounded-full mb-2"></div>
+              <div class="h-2.5 w-1/2 bg-stone rounded-full mb-4"></div>
+              <div class="h-6 w-24 rounded-sm bg-brass"></div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-display text-ink">Website Design</span>
+            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
+          </div>
+        </div>
+
+        <!-- Poster mockup -->
+        <div class="reveal">
+          <div class="frame-print bg-ink rounded-sm p-6 aspect-[3/4] flex flex-col justify-between">
+            <p class="eyebrow on-dark">Harebell &amp; Co Market</p>
+            <div>
+              <p class="font-display text-3xl text-ivory leading-tight">Summer<br/>Night<br/>Market</p>
+              <div class="w-10 h-[2px] bg-brass my-4"></div>
+              <p class="text-xs text-ivory/70 tracking-wide">14 JUNE &middot; NORFOLK QUAY</p>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-display text-ink">Poster Design</span>
+            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
+          </div>
+        </div>
+
+        <!-- QR mockup -->
+        <div class="reveal">
+          <div class="card p-6 aspect-[3/4] flex flex-col items-center justify-center gap-4 bg-ivory">
+            <div class="grid grid-cols-5 gap-[3px] w-24 h-24 p-2 bg-ink rounded-sm">
+              <div class="bg-ivory col-span-2 row-span-2 rounded-[1px]"></div>
+              <div class="bg-ivory col-span-1 row-span-1 rounded-[1px] col-start-5"></div>
+              <div class="bg-ivory col-span-2 row-span-2 rounded-[1px] col-start-4 row-start-4"></div>
+              <div class="bg-ivory col-span-1 row-span-1 rounded-[1px] col-start-1 row-start-5"></div>
+              <div class="bg-brass col-span-1 row-span-1 rounded-[1px] col-start-3 row-start-3"></div>
+            </div>
+            <p class="text-xs text-charcoal/60 text-center">Menu &rarr; scan &rarr; ordering page</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-display text-ink">QR Integration</span>
+            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal mt-14 text-center">
+        <a href="portfolio.html" class="btn btn-outline-ink">See the Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-4xl mx-auto px-6 md:px-8 text-center">
+      <div class="reveal">
+        <p class="eyebrow">Why Wrenfield</p>
+        <p class="font-display text-3xl md:text-4xl leading-[1.35] tracking-[-0.01em] mt-6 text-ink">
+          "Independent businesses deserve the same care and craft as the brands they compete with — without losing the personal attention a big agency can't offer."
+        </p>
+        <a href="about.html" class="inline-block mt-8 nav-link">More about the studio &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-24 md:py-32 bg-ivory-dim border-y border-stone">
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="reveal text-center max-w-xl mx-auto">
+        <p class="eyebrow">Client Stories</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4">Trusted by businesses who care about the details.</h2>
+      </div>
+      <div class="mt-14 grid md:grid-cols-3 gap-8">
+        <blockquote class="reveal card p-8">
+          <span class="font-display text-4xl text-brass">&ldquo;</span>
+          <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">Wrenfield redid our site and menus in a fortnight. Bookings went up almost immediately — customers say we finally look like the restaurant we actually are.</p>
+          <footer class="mt-5 text-sm">
+            <span class="font-display text-ink">Eleanor Hargrove</span>
+            <span class="block text-charcoal/60">Owner, The Corn Exchange Kitchen</span>
+          </footer>
+        </blockquote>
+        <blockquote class="reveal card p-8">
+          <span class="font-display text-4xl text-brass">&ldquo;</span>
+          <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">Quietly professional from the first call. No jargon, no upselling — just a website and print pack that made us look established overnight.</p>
+          <footer class="mt-5 text-sm">
+            <span class="font-display text-ink">Michael Tanner</span>
+            <span class="block text-charcoal/60">Director, Tanner &amp; Sons Joinery</span>
+          </footer>
+        </blockquote>
+        <blockquote class="reveal card p-8">
+          <span class="font-display text-4xl text-brass">&ldquo;</span>
+          <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">The care plan means I never think about the site anymore — it just works. Worth every penny for the peace of mind alone.</p>
+          <footer class="mt-5 text-sm">
+            <span class="font-display text-ink">Priya Sethi</span>
+            <span class="block text-charcoal/60">Founder, Sethi &amp; Bloom Studio</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="panel-ink relative">
+    <div class="grain"></div>
+    <div class="max-w-4xl mx-auto px-6 md:px-8 py-24 md:py-28 text-center relative">
+      <p class="eyebrow on-dark reveal">Get Started</p>
+      <h2 class="reveal font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 text-ivory">Ready to look established?</h2>
+      <p class="reveal mt-6 text-ivory/75 max-w-md mx-auto">Tell us about your business and we'll come back to you with clear next steps — no pressure, no jargon.</p>
+      <a href="contact.html" class="reveal btn btn-brass mt-10">Request a Quote</a>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-ivory">
+  <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+    <div>
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="/assets/img/mark.svg" alt="Wrenfield Studio" class="h-8 w-8" />
+        <span class="font-display text-base tracking-wide">WRENFIELD STUDIO</span>
+      </a>
+      <p class="mt-4 text-sm text-ivory/60 leading-relaxed">A premium digital and creative studio for independent UK businesses. Norfolk-based, UK-wide.</p>
+    </div>
+    <div>
+      <p class="eyebrow on-dark mb-4">Services</p>
+      <ul class="space-y-2 text-sm text-ivory/70">
+        <li><a href="services.html#website-design" class="hover:text-brass-light transition-colors">Website Design</a></li>
+        <li><a href="services.html#poster-design" class="hover:text-brass-light transition-colors">Poster Design</a></li>
+        <li><a href="services.html#banner-design" class="hover:text-brass-light transition-colors">Banner Design</a></li>
+        <li><a href="services.html#ecommerce" class="hover:text-brass-light transition-colors">E-commerce</a></li>
+        <li><a href="services.html#care-plans" class="hover:text-brass-light transition-colors">Care Plans</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow on-dark mb-4">Studio</p>
+      <ul class="space-y-2 text-sm text-ivory/70">
+        <li><a href="about.html" class="hover:text-brass-light transition-colors">About</a></li>
+        <li><a href="portfolio.html" class="hover:text-brass-light transition-colors">Portfolio</a></li>
+        <li><a href="contact.html" class="hover:text-brass-light transition-colors">Request a Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow on-dark mb-4">Contact</p>
+      <ul class="space-y-2 text-sm text-ivory/70">
+        <li><a href="mailto:hello@wrenfieldstudio.co.uk" class="hover:text-brass-light transition-colors">hello@wrenfieldstudio.co.uk</a></li>
+        <li>Norfolk, UK &middot; Serving clients UK-wide</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-ivory/10">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-ivory/50">
+      <span>&copy; <span id="year"></span> Wrenfield Studio. All rights reserved.</span>
+      <span>Making independent businesses look established.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js"></script>
+</body>
+</html>
