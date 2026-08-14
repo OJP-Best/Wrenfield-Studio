@@ -49,7 +49,7 @@
       <a href="contact.html" class="nav-link">Contact</a>
     </nav>
     <div class="hidden md:block">
-      <a href="contact.html" class="btn btn-brass">Request a Quote</a>
+      <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
     </div>
     <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden relative w-8 h-6">
       <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ink"></span>
@@ -73,10 +73,11 @@
   <!-- PAGE HERO -->
   <section class="panel-ink relative">
     <div class="grain"></div>
+    <div class="panel-glow"></div>
     <div class="max-w-4xl mx-auto px-6 md:px-8 pt-20 pb-16 md:pt-28 md:pb-20 relative">
-      <p class="eyebrow on-dark">About</p>
-      <h1 class="font-display text-4xl md:text-6xl leading-[1.08] tracking-[-0.02em] mt-5 text-ivory">An independent studio, built for independent businesses.</h1>
-      <p class="mt-6 max-w-xl text-ivory/75 leading-relaxed">Wrenfield Studio is based in Norfolk and works with businesses across the UK, remote-first, all work delivered digitally.</p>
+      <p class="eyebrow on-dark reveal" style="transition-delay:.05s">About</p>
+      <h1 class="font-display text-4xl md:text-6xl leading-[1.08] tracking-[-0.02em] mt-5 text-ivory"><span class="mask-reveal"><span class="line-reveal">An independent studio, built for independent businesses.</span></span></h1>
+      <p class="reveal mt-6 max-w-xl text-ivory/75 leading-relaxed" style="transition-delay:.3s">Wrenfield Studio is based in Norfolk and works with businesses across the UK, remote-first, all work delivered digitally.</p>
     </div>
   </section>
 
@@ -85,7 +86,7 @@
     <div class="max-w-3xl mx-auto px-6 md:px-8">
       <div class="reveal">
         <p class="eyebrow">Why Independent</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink">Care doesn't scale the way agencies pretend it does.</h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">Care doesn't scale the way agencies pretend it does.</span></span></h2>
       </div>
       <div class="reveal mt-8 space-y-5 text-charcoal/85 leading-relaxed">
         <p>A large agency spreads its attention across dozens of accounts, handed between account managers who aren't the ones actually doing the work. That's how good briefs turn into generic outcomes.</p>
@@ -100,9 +101,12 @@
     <div class="max-w-4xl mx-auto px-6 md:px-8">
       <div class="reveal text-center">
         <p class="eyebrow">How We Work</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink">A clear process, start to finish.</h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">A clear process, start to finish.</span></span></h2>
       </div>
-      <ol class="mt-14 grid sm:grid-cols-2 md:grid-cols-5 gap-8">
+      <div class="relative mt-14">
+        <div class="hidden md:block absolute top-[18px] left-[10%] right-[10%] h-px bg-stone"></div>
+        <div class="hidden md:block absolute top-[18px] left-[10%] h-px bg-brass reveal-fill" style="width:80%; transform-origin:left"></div>
+        <ol class="relative grid sm:grid-cols-2 md:grid-cols-5 gap-8">
         <li class="reveal">
           <span class="font-display text-3xl text-brass">01</span>
           <p class="font-display text-lg text-ink mt-3">Enquire</p>
@@ -128,7 +132,8 @@
           <p class="font-display text-lg text-ink mt-3">Care</p>
           <p class="text-sm text-charcoal/70 mt-1">Ongoing support, so nothing breaks or falls behind.</p>
         </li>
-      </ol>
+        </ol>
+      </div>
     </div>
   </section>
 
@@ -137,7 +142,7 @@
     <div class="max-w-5xl mx-auto px-6 md:px-8">
       <div class="reveal">
         <p class="eyebrow">What Guides the Work</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink max-w-lg">Principles, not a mission statement.</h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink max-w-lg"><span class="mask-reveal"><span class="line-reveal">Principles, not a mission statement.</span></span></h2>
       </div>
       <div class="mt-14 grid sm:grid-cols-2 gap-x-10 gap-y-10">
         <div class="reveal border-t border-stone pt-5">
@@ -161,15 +166,16 @@
   </section>
 
   <!-- LOCATION -->
-  <section class="panel-ink relative">
+  <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="panel-glow"></div>
     <div class="max-w-4xl mx-auto px-6 md:px-8 py-20 md:py-24 relative text-center">
       <div class="reveal inline-flex items-center justify-center w-20 h-20 rounded-full border border-brass/40 relative mb-8">
         <div class="absolute inset-2 rounded-full border border-brass/25"></div>
         <span class="w-2.5 h-2.5 rounded-full bg-brass"></span>
       </div>
       <p class="reveal eyebrow on-dark">Based in Norfolk</p>
-      <h2 class="reveal font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory">Norfolk-based. UK-wide. Remote-first.</h2>
+      <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Norfolk-based. UK-wide. Remote-first.</span></span></h2>
       <p class="reveal mt-5 text-ivory/75 max-w-md mx-auto">Every project is delivered digitally, so distance is never the reason a business goes without a studio that cares about the details.</p>
     </div>
   </section>
@@ -179,12 +185,12 @@
     <div class="reveal max-w-2xl mx-auto px-6 md:px-8">
       <p class="eyebrow">Get Started</p>
       <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink">Let's talk about your business.</h2>
-      <a href="contact.html" class="btn btn-outline-ink mt-8">Request a Quote</a>
+      <a href="contact.html" class="btn btn-outline-ink magnetic mt-8">Request a Quote</a>
     </div>
   </section>
 </main>
 
-<footer class="bg-ink text-ivory">
+<footer class="footer-duotone text-ivory">
   <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
     <div>
       <a href="index.html" class="flex items-center gap-3">
@@ -214,7 +220,7 @@
     <div>
       <p class="eyebrow on-dark mb-4">Contact</p>
       <ul class="space-y-2 text-sm text-ivory/70">
-        <li><a href="mailto:hello@wrenfieldstudio.co.uk" class="hover:text-brass-light transition-colors">hello@wrenfieldstudio.co.uk</a></li>
+        <li><a href="mailto:wrenfieldstudio121@gmail.com" class="hover:text-brass-light transition-colors">wrenfieldstudio121@gmail.com</a></li>
         <li>Norfolk, UK &middot; Serving clients UK-wide</li>
       </ul>
     </div>

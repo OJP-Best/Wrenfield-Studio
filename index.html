@@ -50,7 +50,7 @@
       <a href="contact.html" class="nav-link">Contact</a>
     </nav>
     <div class="hidden md:block">
-      <a href="contact.html" class="btn btn-brass">Request a Quote</a>
+      <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
     </div>
     <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden relative w-8 h-6">
       <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ink"></span>
@@ -74,33 +74,67 @@
   <!-- HERO -->
   <section class="panel-ink relative">
     <div class="grain"></div>
+    <div class="panel-glow"></div>
+    <svg class="signature-seal hidden md:block absolute right-6 md:right-10 bottom-10 md:bottom-14 w-48 h-48 lg:w-60 lg:h-60 opacity-90 pointer-events-none" viewBox="0 0 230 220" aria-hidden="true">
+      <rect class="draw" x="30" y="20" width="140" height="140" fill="none" stroke="#e4c989" stroke-width="4"/>
+      <polyline class="draw" points="52,58 76,138 100,82 124,138 148,58" fill="none" stroke="#e4c989" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <g class="fill-piece">
+        <rect x="120" y="110" width="100" height="100" fill="#3f6e56"/>
+        <text x="170" y="182" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#faf6ee">S</text>
+      </g>
+    </svg>
     <div class="max-w-6xl mx-auto px-6 md:px-8 pt-24 pb-28 md:pt-32 md:pb-36 relative">
-      <p class="eyebrow on-dark">Norfolk, UK &middot; Serving Independent Businesses Nationwide</p>
-      <h1 class="font-display text-[2.75rem] leading-[1.05] md:text-7xl md:leading-[1.03] tracking-[-0.02em] mt-6 max-w-3xl">
+      <p class="eyebrow on-dark reveal" style="transition-delay:.05s">Norfolk, UK &middot; Serving Independent Businesses Nationwide</p>
+      <h1 class="reveal font-display text-[2.75rem] leading-[1.05] md:text-7xl md:leading-[1.03] tracking-[-0.02em] mt-6 max-w-3xl" style="transition-delay:.18s">
         Making independent businesses look established.
       </h1>
-      <p class="mt-8 max-w-xl text-[1.05rem] leading-[1.75] text-ivory/80">
+      <p class="reveal mt-8 max-w-xl text-[1.05rem] leading-[1.75] text-ivory/80" style="transition-delay:.32s">
         Wrenfield Studio is a boutique digital and creative studio for ambitious independent businesses — websites, print, and ongoing care, considered and built the way a much larger agency would, without the overhead.
       </p>
-      <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a href="contact.html" class="btn btn-brass">Request a Quote</a>
-        <a href="portfolio.html" class="btn btn-ghost">View our work</a>
+      <div class="reveal mt-10 flex flex-wrap items-center gap-4" style="transition-delay:.46s">
+        <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
+        <a href="portfolio.html" class="btn btn-ghost magnetic">View our work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="py-14 bg-ivory-dim border-b border-stone">
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid grid-cols-3 gap-6 text-center">
+      <div class="reveal">
+        <p class="font-display text-4xl md:text-5xl text-ink"><span data-count="7">0</span></p>
+        <p class="eyebrow mt-2">Core Services</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display text-4xl md:text-5xl text-ink"><span data-count="100">0</span>%</p>
+        <p class="eyebrow mt-2">Independent &amp; UK-Based</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display text-4xl md:text-5xl text-ink"><span data-count="1">0</span></p>
+        <p class="eyebrow mt-2">Point of Contact, Start to Finish</p>
       </div>
     </div>
   </section>
 
   <!-- WHO WE WORK WITH -->
-  <section class="bg-ivory-dim border-b border-stone">
-    <div class="max-w-6xl mx-auto px-6 md:px-8 py-10 flex flex-col md:flex-row md:items-center gap-4 md:gap-10">
-      <p class="eyebrow shrink-0">Built for independent businesses in</p>
-      <div class="flex flex-wrap gap-x-8 gap-y-2 font-display text-lg text-ink-2">
-        <span>Hospitality</span>
-        <span class="text-stone-2">&middot;</span>
-        <span>Retail</span>
-        <span class="text-stone-2">&middot;</span>
-        <span>Trades</span>
-        <span class="text-stone-2">&middot;</span>
-        <span>Professional Services</span>
+  <section class="panel-forest relative">
+    <div class="grain"></div>
+    <div class="max-w-6xl mx-auto py-8 relative marquee">
+      <div class="marquee-track">
+        <div class="flex items-center gap-10 pr-10 font-display text-lg text-ivory/90 shrink-0">
+          <span class="eyebrow on-dark shrink-0">Built for independent businesses in</span>
+          <span>Hospitality</span><span class="text-brass-light">&middot;</span>
+          <span>Retail</span><span class="text-brass-light">&middot;</span>
+          <span>Trades</span><span class="text-brass-light">&middot;</span>
+          <span>Professional Services</span><span class="text-brass-light">&middot;</span>
+        </div>
+        <div class="flex items-center gap-10 pr-10 font-display text-lg text-ivory/90 shrink-0" aria-hidden="true">
+          <span class="eyebrow on-dark shrink-0">Built for independent businesses in</span>
+          <span>Hospitality</span><span class="text-brass-light">&middot;</span>
+          <span>Retail</span><span class="text-brass-light">&middot;</span>
+          <span>Trades</span><span class="text-brass-light">&middot;</span>
+          <span>Professional Services</span><span class="text-brass-light">&middot;</span>
+        </div>
       </div>
     </div>
   </section>
@@ -110,7 +144,7 @@
     <div class="max-w-3xl mx-auto px-6 md:px-8">
       <div class="reveal">
         <p class="eyebrow">What We Do</p>
-        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4">A full studio, without the overhead.</h2>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">A full studio, without the overhead.</span></span></h2>
       </div>
 
       <div class="mt-14 divide-y divide-stone border-t border-b border-stone">
@@ -173,7 +207,7 @@
       <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
           <p class="eyebrow">Selected Work</p>
-          <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 max-w-xl">A studio built on craft, proven in practice.</h2>
+          <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 max-w-xl"><span class="mask-reveal"><span class="line-reveal">A studio built on craft, proven in practice.</span></span></h2>
         </div>
         <p class="max-w-sm text-sm text-charcoal/70 leading-relaxed">Our first client project — a dental practice website — launches soon. Until then, here's the calibre of work you can expect.</p>
       </div>
@@ -181,7 +215,7 @@
       <div class="mt-14 grid md:grid-cols-3 gap-8">
         <!-- Website mockup -->
         <div class="reveal">
-          <div class="frame-browser">
+          <div class="frame-browser" data-tilt>
             <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
             <div class="p-5 bg-ivory">
               <div class="flex items-center justify-between mb-4">
@@ -205,7 +239,7 @@
 
         <!-- Poster mockup -->
         <div class="reveal">
-          <div class="frame-print bg-ink rounded-sm p-6 aspect-[3/4] flex flex-col justify-between">
+          <div class="frame-print bg-ink rounded-sm p-6 aspect-[3/4] flex flex-col justify-between" data-tilt>
             <p class="eyebrow on-dark">Harebell &amp; Co Market</p>
             <div>
               <p class="font-display text-3xl text-ivory leading-tight">Summer<br/>Night<br/>Market</p>
@@ -221,7 +255,7 @@
 
         <!-- QR mockup -->
         <div class="reveal">
-          <div class="card p-6 aspect-[3/4] flex flex-col items-center justify-center gap-4 bg-ivory">
+          <div class="card p-6 aspect-[3/4] flex flex-col items-center justify-center gap-4 bg-ivory" data-tilt>
             <div class="grid grid-cols-5 gap-[3px] w-24 h-24 p-2 bg-ink rounded-sm">
               <div class="bg-ivory col-span-2 row-span-2 rounded-[1px]"></div>
               <div class="bg-ivory col-span-1 row-span-1 rounded-[1px] col-start-5"></div>
@@ -239,7 +273,7 @@
       </div>
 
       <div class="reveal mt-14 text-center">
-        <a href="portfolio.html" class="btn btn-outline-ink">See the Full Portfolio</a>
+        <a href="portfolio.html" class="btn btn-forest magnetic">See the Full Portfolio</a>
       </div>
     </div>
   </section>
@@ -262,10 +296,10 @@
     <div class="max-w-6xl mx-auto px-6 md:px-8">
       <div class="reveal text-center max-w-xl mx-auto">
         <p class="eyebrow">Client Stories</p>
-        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4">Trusted by businesses who care about the details.</h2>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">Trusted by businesses who care about the details.</span></span></h2>
       </div>
       <div class="mt-14 grid md:grid-cols-3 gap-8">
-        <blockquote class="reveal card p-8">
+        <blockquote class="reveal card p-8" data-tilt>
           <span class="font-display text-4xl text-brass">&ldquo;</span>
           <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">Wrenfield redid our site and menus in a fortnight. Bookings went up almost immediately — customers say we finally look like the restaurant we actually are.</p>
           <footer class="mt-5 text-sm">
@@ -273,7 +307,7 @@
             <span class="block text-charcoal/60">Owner, The Corn Exchange Kitchen</span>
           </footer>
         </blockquote>
-        <blockquote class="reveal card p-8">
+        <blockquote class="reveal card p-8" data-tilt>
           <span class="font-display text-4xl text-brass">&ldquo;</span>
           <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">Quietly professional from the first call. No jargon, no upselling — just a website and print pack that made us look established overnight.</p>
           <footer class="mt-5 text-sm">
@@ -281,7 +315,7 @@
             <span class="block text-charcoal/60">Director, Tanner &amp; Sons Joinery</span>
           </footer>
         </blockquote>
-        <blockquote class="reveal card p-8">
+        <blockquote class="reveal card p-8" data-tilt>
           <span class="font-display text-4xl text-brass">&ldquo;</span>
           <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">The care plan means I never think about the site anymore — it just works. Worth every penny for the peace of mind alone.</p>
           <footer class="mt-5 text-sm">
@@ -294,19 +328,20 @@
   </section>
 
   <!-- CTA BANNER -->
-  <section class="panel-ink relative">
+  <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="panel-glow"></div>
     <div class="max-w-4xl mx-auto px-6 md:px-8 py-24 md:py-28 text-center relative">
       <p class="eyebrow on-dark reveal">Get Started</p>
-      <h2 class="reveal font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 text-ivory">Ready to look established?</h2>
+      <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Ready to look established?</span></span></h2>
       <p class="reveal mt-6 text-ivory/75 max-w-md mx-auto">Tell us about your business and we'll come back to you with clear next steps — no pressure, no jargon.</p>
-      <a href="contact.html" class="reveal btn btn-brass mt-10">Request a Quote</a>
+      <a href="contact.html" class="reveal btn btn-brass magnetic mt-10">Request a Quote</a>
     </div>
   </section>
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-ink text-ivory">
+<footer class="footer-duotone text-ivory">
   <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
     <div>
       <a href="index.html" class="flex items-center gap-3">
@@ -336,7 +371,7 @@
     <div>
       <p class="eyebrow on-dark mb-4">Contact</p>
       <ul class="space-y-2 text-sm text-ivory/70">
-        <li><a href="mailto:hello@wrenfieldstudio.co.uk" class="hover:text-brass-light transition-colors">hello@wrenfieldstudio.co.uk</a></li>
+        <li><a href="mailto:wrenfieldstudio121@gmail.com" class="hover:text-brass-light transition-colors">wrenfieldstudio121@gmail.com</a></li>
         <li>Norfolk, UK &middot; Serving clients UK-wide</li>
       </ul>
     </div>

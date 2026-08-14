@@ -49,7 +49,7 @@
       <a href="contact.html" class="nav-link">Contact</a>
     </nav>
     <div class="hidden md:block">
-      <a href="contact.html" class="btn btn-brass">Request a Quote</a>
+      <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
     </div>
     <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden relative w-8 h-6">
       <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ink"></span>
@@ -73,10 +73,11 @@
   <!-- PAGE HERO -->
   <section class="panel-ink relative">
     <div class="grain"></div>
+    <div class="panel-glow"></div>
     <div class="max-w-4xl mx-auto px-6 md:px-8 pt-20 pb-16 md:pt-28 md:pb-20 relative">
-      <p class="eyebrow on-dark">Portfolio</p>
-      <h1 class="font-display text-4xl md:text-6xl leading-[1.08] tracking-[-0.02em] mt-5 text-ivory">A studio built on craft, proven in practice.</h1>
-      <p class="mt-6 max-w-xl text-ivory/75 leading-relaxed">Our first real client project — a dental practice website — launches soon, and we'll add it here the moment it's live. Until then, every piece below is concept work: built to the same standard, using fictional businesses, so you can judge the craft honestly.</p>
+      <p class="eyebrow on-dark reveal" style="transition-delay:.05s">Portfolio</p>
+      <h1 class="font-display text-4xl md:text-6xl leading-[1.08] tracking-[-0.02em] mt-5 text-ivory"><span class="mask-reveal"><span class="line-reveal">A studio built on craft, proven in practice.</span></span></h1>
+      <p class="reveal mt-6 max-w-xl text-ivory/75 leading-relaxed" style="transition-delay:.3s">Our first real client project — a dental practice website — launches soon, and we'll add it here the moment it's live. Until then, every piece below is concept work: built to the same standard, using fictional businesses, so you can judge the craft honestly.</p>
     </div>
   </section>
 
@@ -86,7 +87,7 @@
 
         <!-- 1 Website Design -->
         <div class="reveal">
-          <div class="frame-browser">
+          <div class="frame-browser" data-tilt>
             <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
             <div class="p-5 bg-ivory">
               <div class="flex items-center justify-between mb-4">
@@ -114,7 +115,7 @@
 
         <!-- 2 Poster Design -->
         <div class="reveal">
-          <div class="frame-print bg-ink rounded-sm p-6 aspect-[3/4] flex flex-col justify-between max-w-xs mx-auto md:mx-0">
+          <div class="frame-print bg-ink rounded-sm p-6 aspect-[3/4] flex flex-col justify-between max-w-xs mx-auto md:mx-0" data-tilt>
             <p class="eyebrow on-dark">Harebell &amp; Co Market</p>
             <div>
               <p class="font-display text-3xl text-ivory leading-tight">Summer<br/>Night<br/>Market</p>
@@ -133,7 +134,7 @@
 
         <!-- 3 Banner Design -->
         <div class="reveal">
-          <div class="card p-6">
+          <div class="card p-6" data-tilt>
             <div class="rounded-sm bg-ink-2 h-24 flex items-center px-6 mb-4">
               <div>
                 <div class="h-2.5 w-28 bg-brass rounded-full mb-2"></div>
@@ -160,7 +161,7 @@
 
         <!-- 4 QR Integration -->
         <div class="reveal">
-          <div class="card p-6 flex items-center gap-6">
+          <div class="card p-6 flex items-center gap-6" data-tilt>
             <div class="grid grid-cols-5 gap-[3px] w-24 h-24 p-2 bg-ink rounded-sm shrink-0">
               <div class="bg-ivory col-span-2 row-span-2 rounded-[1px]"></div>
               <div class="bg-ivory col-span-1 row-span-1 rounded-[1px] col-start-5"></div>
@@ -185,7 +186,7 @@
 
         <!-- 5 Quote Forms -->
         <div class="reveal">
-          <div class="card p-6">
+          <div class="card p-6" data-tilt>
             <p class="font-display text-lg text-ink mb-4">Get a Quote</p>
             <div class="space-y-3">
               <div class="h-9 rounded-sm border border-stone-2 bg-ivory"></div>
@@ -205,7 +206,7 @@
 
         <!-- 6 E-commerce -->
         <div class="reveal">
-          <div class="frame-browser">
+          <div class="frame-browser" data-tilt>
             <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
             <div class="p-5 bg-ivory grid grid-cols-2 gap-4">
               <div class="rounded-sm bg-forest h-28"></div>
@@ -228,7 +229,7 @@
 
         <!-- 7 Care Plans -->
         <div class="reveal">
-          <div class="card p-6">
+          <div class="card p-6" data-tilt>
             <p class="eyebrow mb-4">Site Health</p>
             <ul class="space-y-3 text-sm">
               <li class="flex items-center justify-between"><span class="text-charcoal/75">Uptime</span><span class="font-display text-ink">99.9%</span></li>
@@ -251,17 +252,18 @@
   </section>
 
   <!-- CTA BANNER -->
-  <section class="panel-ink relative">
+  <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="panel-glow"></div>
     <div class="max-w-3xl mx-auto px-6 md:px-8 py-20 md:py-24 text-center relative">
       <p class="reveal eyebrow on-dark">Your Business, Next</p>
-      <h2 class="reveal font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory">Let's build something worth showing off.</h2>
-      <a href="contact.html" class="reveal btn btn-brass mt-8">Request a Quote</a>
+      <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Let's build something worth showing off.</span></span></h2>
+      <a href="contact.html" class="reveal btn btn-brass magnetic mt-8">Request a Quote</a>
     </div>
   </section>
 </main>
 
-<footer class="bg-ink text-ivory">
+<footer class="footer-duotone text-ivory">
   <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
     <div>
       <a href="index.html" class="flex items-center gap-3">
@@ -291,7 +293,7 @@
     <div>
       <p class="eyebrow on-dark mb-4">Contact</p>
       <ul class="space-y-2 text-sm text-ivory/70">
-        <li><a href="mailto:hello@wrenfieldstudio.co.uk" class="hover:text-brass-light transition-colors">hello@wrenfieldstudio.co.uk</a></li>
+        <li><a href="mailto:wrenfieldstudio121@gmail.com" class="hover:text-brass-light transition-colors">wrenfieldstudio121@gmail.com</a></li>
         <li>Norfolk, UK &middot; Serving clients UK-wide</li>
       </ul>
     </div>
