@@ -143,6 +143,36 @@
     });
   }
 
+  /* ---------- gentle parallax (continuous, scroll-position driven — not one-shot) ---------- */
+  var parallaxEls = document.querySelectorAll("[data-parallax]");
+  if (parallaxEls.length && !prefersReduced) {
+    var px_ticking = false;
+    function updateParallax() {
+      var vh = window.innerHeight;
+      parallaxEls.forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        var range = parseFloat(el.getAttribute("data-parallax")) || 12;
+        // progress: element's centre distance from viewport centre, normalised to viewport height,
+        // clamped to +/-1 so the shift stays bounded to `range` px no matter where the element
+        // sits on the page (long pages would otherwise produce huge, unbounded offsets).
+        var progress = (rect.top + rect.height / 2 - vh / 2) / vh;
+        var clamped = Math.max(-1, Math.min(1, progress));
+        var offset = clamped * range;
+        el.style.transform = "translate3d(0," + offset.toFixed(1) + "px,0)";
+      });
+      px_ticking = false;
+    }
+    function onScrollParallax() {
+      if (!px_ticking) {
+        window.requestAnimationFrame(updateParallax);
+        px_ticking = true;
+      }
+    }
+    window.addEventListener("scroll", onScrollParallax, { passive: true });
+    window.addEventListener("resize", onScrollParallax);
+    updateParallax();
+  }
+
   /* ---------- count-up stats ---------- */
   var stats = document.querySelectorAll("[data-count]");
   if (stats.length && "IntersectionObserver" in window) {

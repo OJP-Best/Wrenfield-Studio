@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 220">
   <!-- outlined square: W -->
-  <rect x="30" y="20" width="140" height="140" fill="none" stroke="#0f2438" stroke-width="6"/>
-  <polyline points="52,58 76,138 100,82 124,138 148,58" fill="none" stroke="#0f2438" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="30" y="20" width="140" height="140" fill="none" stroke="#c6a15b" stroke-width="6"/>
+  <polyline points="52,58 76,138 100,82 124,138 148,58" fill="none" stroke="#c6a15b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- solid square: S -->
   <rect x="120" y="110" width="100" height="100" fill="#1f3a2e"/>

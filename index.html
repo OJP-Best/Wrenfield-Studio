@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Wrenfield Studio — Making Independent Businesses Look Established</title>
 <meta name="description" content="Wrenfield Studio is a premium digital and creative studio based in Norfolk, serving independent UK businesses with website design, print, and ongoing care — helping you look as established as the brands you compete with." />
-<meta name="theme-color" content="#0f2438" />
+<meta name="theme-color" content="#0f2119" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/mark.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
           ink: '#0f2438', 'ink-2': '#16324d', 'ink-deep': '#081420',
           brass: '#c6a15b', 'brass-light': '#e4c989', 'brass-dark': '#9c7a3e',
           ivory: '#faf6ee', 'ivory-dim': '#f1e9d8',
-          charcoal: '#1f1f1f', forest: '#1f3a2e',
+          charcoal: '#1f1f1f', forest: '#1f3a2e', 'forest-2': '#2b503e', 'forest-deep': '#0f2119',
           stone: '#e1d8c4', 'stone-2': '#cbb99b'
         },
         fontFamily: {
@@ -32,18 +32,18 @@
 </script>
 <link rel="stylesheet" href="/assets/css/site.css" />
 </head>
-<body class="bg-ivory text-charcoal">
-<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-brass focus:text-ink focus:px-4 focus:py-2">Skip to content</a>
+<body class="bg-forest-deep text-ivory">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-brass focus:text-forest-deep focus:px-4 focus:py-2">Skip to content</a>
 
 <!-- NAV -->
 <header class="site-nav">
   <div class="max-w-6xl mx-auto px-6 md:px-8 flex items-center justify-between h-20">
     <a href="index.html" class="flex items-center gap-3">
       <img src="/assets/img/mark.svg" alt="Wrenfield Studio" class="h-9 w-9" />
-      <span class="font-display text-lg tracking-wide text-ink">WRENFIELD <span class="text-brass-dark">STUDIO</span></span>
+      <span class="font-display text-lg tracking-wide text-ivory">WRENFIELD <span class="text-brass-dark">STUDIO</span></span>
     </a>
     <nav class="hidden md:flex items-center gap-10">
-      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html" class="nav-link is-active">Home</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="portfolio.html" class="nav-link">Portfolio</a>
       <a href="about.html" class="nav-link">About</a>
@@ -53,14 +53,14 @@
       <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
     </div>
     <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden relative w-8 h-6">
-      <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ink"></span>
-      <span class="hamburger-line mid absolute left-0 top-1/2 -translate-y-1/2 w-8 h-[1.5px] bg-ink"></span>
-      <span class="hamburger-line bottom absolute left-0 bottom-0 w-8 h-[1.5px] bg-ink"></span>
+      <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ivory"></span>
+      <span class="hamburger-line mid absolute left-0 top-1/2 -translate-y-1/2 w-8 h-[1.5px] bg-ivory"></span>
+      <span class="hamburger-line bottom absolute left-0 bottom-0 w-8 h-[1.5px] bg-ivory"></span>
     </button>
   </div>
   <div id="mobile-panel" class="md:hidden px-6 pb-2">
-    <div class="flex flex-col gap-4 py-4 border-t border-stone">
-      <a href="index.html" class="nav-link">Home</a>
+    <div class="flex flex-col gap-4 py-4 border-t border-ivory/10">
+      <a href="index.html" class="nav-link is-active">Home</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="portfolio.html" class="nav-link">Portfolio</a>
       <a href="about.html" class="nav-link">About</a>
@@ -71,47 +71,277 @@
 </header>
 
 <main id="main">
+
   <!-- HERO -->
-  <section class="panel-ink relative">
+  <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
     <div class="panel-glow"></div>
-    <svg class="signature-seal hidden md:block absolute right-6 md:right-10 bottom-10 md:bottom-14 w-48 h-48 lg:w-60 lg:h-60 opacity-90 pointer-events-none" viewBox="0 0 230 220" aria-hidden="true">
-      <rect class="draw" x="30" y="20" width="140" height="140" fill="none" stroke="#e4c989" stroke-width="4"/>
-      <polyline class="draw" points="52,58 76,138 100,82 124,138 148,58" fill="none" stroke="#e4c989" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <g class="fill-piece">
-        <rect x="120" y="110" width="100" height="100" fill="#3f6e56"/>
-        <text x="170" y="182" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#faf6ee">S</text>
-      </g>
-    </svg>
-    <div class="max-w-6xl mx-auto px-6 md:px-8 pt-24 pb-28 md:pt-32 md:pb-36 relative">
+    <img src="/assets/img/mark.svg" alt="" aria-hidden="true" class="hidden lg:block absolute -right-16 top-1/2 -translate-y-1/2 w-[26rem] h-[26rem] opacity-[0.06] pointer-events-none select-none" />
+    <div class="max-w-6xl mx-auto px-6 md:px-8 pt-24 pb-6 md:pt-32 relative">
       <p class="eyebrow on-dark reveal" style="transition-delay:.05s">Norfolk, UK &middot; Serving Independent Businesses Nationwide</p>
-      <h1 class="reveal font-display text-[2.75rem] leading-[1.05] md:text-7xl md:leading-[1.03] tracking-[-0.02em] mt-6 max-w-3xl" style="transition-delay:.18s">
+      <h1 class="reveal font-display text-[2.6rem] leading-[1.05] md:text-6xl lg:text-7xl md:leading-[1.03] tracking-[-0.02em] mt-6 max-w-3xl" style="transition-delay:.18s">
         Making independent businesses look established.
       </h1>
-      <p class="reveal mt-8 max-w-xl text-[1.05rem] leading-[1.75] text-ivory/80" style="transition-delay:.32s">
-        Wrenfield Studio is a boutique digital and creative studio for ambitious independent businesses — websites, print, and ongoing care, considered and built the way a much larger agency would, without the overhead.
+      <p class="reveal mt-7 max-w-xl text-[1.05rem] leading-[1.75] text-ivory/80" style="transition-delay:.32s">
+        A boutique digital and creative studio for independent businesses in hospitality, retail, trades, and professional services — websites, print, and ongoing care, considered and built the way a much larger agency would, without the overhead.
       </p>
-      <div class="reveal mt-10 flex flex-wrap items-center gap-4" style="transition-delay:.46s">
+      <div class="reveal mt-9 flex flex-wrap items-center gap-4" style="transition-delay:.46s">
         <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
         <a href="portfolio.html" class="btn btn-ghost magnetic">View our work</a>
       </div>
     </div>
+
+    <!-- big embedded mockup, overlapping the panel's base -->
+    <div class="reveal max-w-5xl mx-auto px-6 md:px-8 relative mt-14 md:mt-16 pb-20 md:pb-28" style="transition-delay:.6s">
+      <div class="relative" data-parallax="18">
+        <div class="screen-card on-dark">
+          <span class="screen-pill"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept &mdash; Marram &amp; Co.</span>
+          <div class="p-6 md:p-12 pt-16 md:pt-16 bg-ivory">
+            <div class="flex items-center justify-between mb-6">
+              <div class="font-display text-base md:text-lg text-forest-deep">Marram &amp; Co.</div>
+              <div class="hidden sm:flex gap-6 text-xs text-charcoal/50 tracking-wide uppercase">
+                <span>Menu</span><span>Story</span><span>Visit</span><span>Book</span>
+              </div>
+              <div class="h-8 w-24 rounded-full bg-brass"></div>
+            </div>
+            <div class="h-40 md:h-64 rounded-2xl mb-5 kb">
+              <div class="kb-inner bg-forest-2"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-deep/70 to-transparent"></div>
+              <p class="absolute bottom-4 left-5 font-display text-xl md:text-3xl text-ivory">Coastal food,<br/>done properly.</p>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-16 md:h-20 rounded-xl bg-stone"></div>
+              <div class="h-16 md:h-20 rounded-xl bg-stone"></div>
+              <div class="h-16 md:h-20 rounded-xl bg-stone"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- STATS -->
-  <section class="py-14 bg-ivory-dim border-b border-stone">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid grid-cols-3 gap-6 text-center">
-      <div class="reveal">
-        <p class="font-display text-4xl md:text-5xl text-ink"><span data-count="7">0</span></p>
-        <p class="eyebrow mt-2">Core Services</p>
+  <!-- SELECTED WORK -->
+  <section class="panel-forest relative py-24 md:py-28">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8 relative">
+      <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 max-w-xl"><span class="mask-reveal"><span class="line-reveal">A studio built on craft, proven in practice.</span></span></h2>
+        </div>
+        <p class="max-w-sm text-sm text-ivory/70 leading-relaxed">Our first client project — a dental practice website — launches soon. Until then, here's the calibre of work you can expect.</p>
       </div>
-      <div class="reveal">
-        <p class="font-display text-4xl md:text-5xl text-ink"><span data-count="100">0</span>%</p>
-        <p class="eyebrow mt-2">Independent &amp; UK-Based</p>
+
+      <div class="mt-14 grid md:grid-cols-5 gap-6 md:gap-8">
+        <!-- big website mockup -->
+        <div class="reveal md:col-span-3">
+          <div class="screen-card h-full">
+            <span class="screen-pill">Website</span>
+            <div class="p-6 pt-16 bg-ivory h-full">
+              <div class="flex items-center justify-between mb-5">
+                <div class="font-display text-sm text-forest-deep">Harebell &amp; Co.</div>
+                <div class="flex gap-2">
+                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
+                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
+                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
+                </div>
+              </div>
+              <div class="h-40 rounded-xl mb-4 kb">
+                <div class="kb-inner bg-forest"></div>
+                <p class="absolute bottom-4 left-4 font-display text-lg text-ivory">Fresh, local, weekly.</p>
+              </div>
+              <div class="grid grid-cols-3 gap-3">
+                <div class="h-14 rounded-lg bg-stone"></div>
+                <div class="h-14 rounded-lg bg-stone"></div>
+                <div class="h-14 rounded-lg bg-stone"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-display text-ivory">Website Design &amp; Development</span>
+            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 flex flex-col gap-6 md:gap-8" data-parallax="14">
+          <!-- poster mockup -->
+          <div class="reveal">
+            <div class="screen-card on-dark bg-forest-deep p-5 aspect-[16/10] flex flex-col justify-between">
+              <p class="eyebrow on-dark">Harebell &amp; Co Market</p>
+              <div>
+                <p class="font-display text-2xl text-ivory leading-tight">Summer Night Market</p>
+                <div class="w-10 h-[2px] bg-brass my-3"></div>
+                <p class="text-xs text-ivory/70 tracking-wide">14 JUNE &middot; NORFOLK QUAY</p>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="font-display text-ivory text-sm">Poster Design</span>
+              <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
+            </div>
+          </div>
+          <!-- banner mockup -->
+          <div class="reveal">
+            <div class="screen-card on-dark bg-forest p-5 aspect-[16/10] flex flex-col justify-center items-center text-center">
+              <p class="font-display text-xl text-ivory leading-tight">Tanner &amp; Sons<br/><span class="text-brass-light italic">Joinery</span></p>
+              <p class="text-[0.65rem] text-ivory/60 tracking-[0.2em] uppercase mt-2">Shopfront Banner</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="font-display text-ivory text-sm">Banner Design</span>
+              <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="reveal">
-        <p class="font-display text-4xl md:text-5xl text-ink"><span data-count="1">0</span></p>
-        <p class="eyebrow mt-2">Point of Contact, Start to Finish</p>
+    </div>
+  </section>
+
+  <!-- BRIEF / CONSULTATION -->
+  <section class="panel-forest relative">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-24 md:py-28 relative">
+      <div class="reveal max-w-xl">
+        <p class="eyebrow on-dark">How We Start</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Every project starts with a conversation.</span></span></h2>
+        <p class="mt-6 text-ivory/70 leading-relaxed">Before a single pixel is drawn, we listen — to how your business runs, who it's for, and how you want it to feel. That shapes everything that follows.</p>
+      </div>
+
+      <div class="reveal mt-14 grid lg:grid-cols-5 gap-8">
+        <div class="brief-mock p-6 md:p-8 lg:col-span-3" data-parallax="10">
+          <p class="text-xs uppercase tracking-[0.16em] text-brass-light mb-5">Discovery Notes &mdash; Tanner &amp; Sons Joinery</p>
+          <label class="block text-[0.7rem] uppercase tracking-wide text-ivory/50 mb-2">Business name</label>
+          <div class="brief-field px-4 py-3 mb-5">Tanner &amp; Sons Joinery</div>
+          <label class="block text-[0.7rem] uppercase tracking-wide text-ivory/50 mb-2">Brand personality</label>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="brief-chip is-active px-3 py-1.5">Established</span>
+            <span class="brief-chip px-3 py-1.5">Approachable</span>
+            <span class="brief-chip px-3 py-1.5">Bold</span>
+            <span class="brief-chip px-3 py-1.5">Refined</span>
+          </div>
+          <label class="block text-[0.7rem] uppercase tracking-wide text-ivory/50 mb-2">What matters most</label>
+          <div class="brief-field px-4 py-3 h-16 text-ivory/40">Trust at first glance — customers should feel we've been doing this for decades.</div>
+        </div>
+
+        <div class="lg:col-span-2 grid grid-rows-3 gap-5">
+          <div class="brief-mock p-5 flex items-center gap-4">
+            <div class="flex gap-1.5 shrink-0">
+              <span class="w-7 h-7 rounded-full bg-forest-deep border border-ivory/20"></span>
+              <span class="w-7 h-7 rounded-full bg-brass border border-ivory/20"></span>
+              <span class="w-7 h-7 rounded-full bg-ivory border border-ivory/20"></span>
+            </div>
+            <p class="text-xs text-ivory/50">Palette drawn from your brand, not a template</p>
+          </div>
+          <div class="brief-mock p-5 flex items-center gap-4">
+            <span class="font-display text-2xl text-ivory shrink-0">Aa</span>
+            <p class="text-xs text-ivory/50">A type pairing that fits how you actually speak</p>
+          </div>
+          <div class="brief-mock p-5 flex items-center gap-4">
+            <span class="text-2xl shrink-0 text-brass-light font-display italic">W</span>
+            <p class="text-xs text-ivory/50">A mark and logo concept, refined with you</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVERY TOUCHPOINT -->
+  <section class="panel-forest relative py-24 md:py-28">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8 relative">
+      <div class="reveal max-w-xl">
+        <p class="eyebrow">Every Touchpoint, Considered</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">Print and digital, connected.</span></span></h2>
+      </div>
+
+      <div class="mt-14 grid lg:grid-cols-5 gap-6">
+        <!-- QR: tall, spans both rows -->
+        <div class="reveal feature-tile lg:col-span-2 lg:row-span-2 flex flex-col">
+          <div class="p-8 flex-1 flex flex-col items-center justify-center gap-5">
+            <div class="grid grid-cols-5 gap-[3px] w-28 h-28 p-2.5 bg-forest-deep rounded-xl" data-parallax="16">
+              <div class="bg-ivory col-span-2 row-span-2 rounded-[2px]"></div>
+              <div class="bg-ivory col-span-1 row-span-1 rounded-[2px] col-start-5"></div>
+              <div class="bg-ivory col-span-2 row-span-2 rounded-[2px] col-start-4 row-start-4"></div>
+              <div class="bg-ivory col-span-1 row-span-1 rounded-[2px] col-start-1 row-start-5"></div>
+              <div class="bg-brass col-span-1 row-span-1 rounded-[2px] col-start-3 row-start-3"></div>
+            </div>
+            <p class="text-sm text-ivory/50 text-center">Menu &rarr; scan &rarr; ordering page</p>
+          </div>
+          <div class="feature-caption">
+            <span class="font-display text-ivory text-sm">QR Code Integration</span>
+          </div>
+        </div>
+        <!-- forms -->
+        <div class="reveal feature-tile lg:col-span-3">
+          <div class="p-6 flex flex-col justify-center gap-2.5 aspect-[21/9]">
+            <div class="h-2 w-1/4 bg-stone-2 rounded-full mb-1"></div>
+            <div class="flex gap-3">
+              <div class="field !py-2 text-xs text-ivory/30 flex-1">Your name</div>
+              <div class="field !py-2 text-xs text-ivory/30 flex-1">Service interested in</div>
+            </div>
+            <div class="h-8 w-32 rounded-full bg-brass mt-1"></div>
+          </div>
+          <div class="feature-caption">
+            <span class="font-display text-ivory text-sm">Contact &amp; Quote Forms</span>
+          </div>
+        </div>
+        <!-- ecommerce -->
+        <div class="reveal feature-tile lg:col-span-2">
+          <div class="p-6 flex gap-4 aspect-[21/9]">
+            <div class="w-20 h-full rounded-xl bg-forest-2 shrink-0"></div>
+            <div class="flex flex-col justify-center gap-2 flex-1">
+              <div class="h-2 w-2/3 bg-ivory/25 rounded-full"></div>
+              <div class="h-2 w-1/3 bg-brass-dark rounded-full"></div>
+              <div class="h-7 w-24 rounded-full bg-forest-deep mt-1 flex items-center justify-center">
+                <span class="text-[0.6rem] uppercase tracking-widest text-ivory">Buy Now</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-caption">
+            <span class="font-display text-ivory text-sm">E-commerce Websites</span>
+          </div>
+        </div>
+        <!-- digital banner: full width -->
+        <div class="reveal feature-tile lg:col-span-5">
+          <div class="p-8 flex items-center justify-center gap-4 aspect-[21/5] bg-forest-2">
+            <p class="font-display text-ivory text-xl md:text-2xl text-center leading-snug">Book Your Table Today</p>
+            <span class="shrink-0 text-[0.6rem] uppercase tracking-[0.2em] text-brass-light border border-brass-light/40 rounded-full px-3 py-1.5">Reserve Now</span>
+          </div>
+          <div class="feature-caption">
+            <span class="font-display text-ivory text-sm">Digital Banner Ads</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE STRIP + PULL QUOTE -->
+  <section class="panel-forest py-20 md:py-24 border-y border-ivory/10">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 relative">
+      <div class="grid sm:grid-cols-3 gap-10 md:gap-8">
+        <div class="reveal border-t border-ivory/15 pt-5">
+          <p class="font-display text-lg text-ivory">Mobile-first &amp; fast</p>
+          <p class="text-sm text-ivory/60 mt-2 leading-relaxed">Built to load quickly and feel right on every screen, not just a desktop mockup.</p>
+        </div>
+        <div class="reveal border-t border-ivory/15 pt-5">
+          <p class="font-display text-lg text-ivory">SEO foundations built in</p>
+          <p class="text-sm text-ivory/60 mt-2 leading-relaxed">Proper titles, meta descriptions, and semantic structure from the first build.</p>
+        </div>
+        <div class="reveal border-t border-ivory/15 pt-5">
+          <p class="font-display text-lg text-ivory">Ongoing care &amp; security</p>
+          <p class="text-sm text-ivory/60 mt-2 leading-relaxed">Optional monthly care plans keep your site updated, backed up, and performing.</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-20 max-w-2xl mx-auto text-center">
+        <p class="font-display text-2xl md:text-3xl leading-[1.4] tracking-[-0.01em] text-ivory">
+          &ldquo;Independent businesses deserve the same care and craft as the brands they compete with &mdash; without losing the personal attention a big agency can't offer.&rdquo;
+        </p>
+        <a href="about.html" class="inline-block mt-6 nav-link">More about the studio &rarr;</a>
       </div>
     </div>
   </section>
@@ -119,208 +349,125 @@
   <!-- WHO WE WORK WITH -->
   <section class="panel-forest relative">
     <div class="grain"></div>
-    <div class="max-w-6xl mx-auto py-8 relative marquee">
-      <div class="marquee-track">
-        <div class="flex items-center gap-10 pr-10 font-display text-lg text-ivory/90 shrink-0">
-          <span class="eyebrow on-dark shrink-0">Built for independent businesses in</span>
-          <span>Hospitality</span><span class="text-brass-light">&middot;</span>
-          <span>Retail</span><span class="text-brass-light">&middot;</span>
-          <span>Trades</span><span class="text-brass-light">&middot;</span>
-          <span>Professional Services</span><span class="text-brass-light">&middot;</span>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-24 relative">
+      <p class="reveal eyebrow on-dark text-center">Who We Work With</p>
+      <h2 class="reveal font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory text-center max-w-lg mx-auto">Built for independent businesses that care how they're seen.</h2>
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="reveal grow-card p-6">
+          <span class="grow-icon font-display italic">H</span>
+          <p class="font-display text-lg text-ivory mt-4">Hospitality</p>
+          <p class="text-sm text-ivory/50 mt-1">Cafés, restaurants &amp; venues</p>
         </div>
-        <div class="flex items-center gap-10 pr-10 font-display text-lg text-ivory/90 shrink-0" aria-hidden="true">
-          <span class="eyebrow on-dark shrink-0">Built for independent businesses in</span>
-          <span>Hospitality</span><span class="text-brass-light">&middot;</span>
-          <span>Retail</span><span class="text-brass-light">&middot;</span>
-          <span>Trades</span><span class="text-brass-light">&middot;</span>
-          <span>Professional Services</span><span class="text-brass-light">&middot;</span>
+        <div class="reveal grow-card p-6">
+          <span class="grow-icon font-display italic">R</span>
+          <p class="font-display text-lg text-ivory mt-4">Retail</p>
+          <p class="text-sm text-ivory/50 mt-1">Independent shops &amp; makers</p>
+        </div>
+        <div class="reveal grow-card p-6">
+          <span class="grow-icon font-display italic">T</span>
+          <p class="font-display text-lg text-ivory mt-4">Trades</p>
+          <p class="text-sm text-ivory/50 mt-1">Joiners, builders &amp; installers</p>
+        </div>
+        <div class="reveal grow-card p-6">
+          <span class="grow-icon font-display italic">P</span>
+          <p class="font-display text-lg text-ivory mt-4">Professional Services</p>
+          <p class="text-sm text-ivory/50 mt-1">Studios, consultants &amp; firms</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES MENU -->
-  <section class="py-24 md:py-32">
-    <div class="max-w-3xl mx-auto px-6 md:px-8">
+  <!-- HOW WE WORK -->
+  <section class="panel-forest relative py-24 md:py-32">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-3xl mx-auto px-6 md:px-8 relative">
       <div class="reveal">
-        <p class="eyebrow">What We Do</p>
-        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">A full studio, without the overhead.</span></span></h2>
+        <p class="eyebrow">How We Work</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">A clear path from enquiry to launch.</span></span></h2>
       </div>
 
-      <div class="mt-14 divide-y divide-stone border-t border-b border-stone">
-        <a href="services.html#website-design" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">Website Design &amp; Development</span>
-            <span class="text-sm text-charcoal/70">Custom, professional websites built to convert visitors into enquiries.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
-        <a href="services.html#poster-design" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">Poster Design</span>
-            <span class="text-sm text-charcoal/70">Print-ready posters for promotions, events, and campaigns.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
-        <a href="services.html#banner-design" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">Banner Design</span>
-            <span class="text-sm text-charcoal/70">Physical and digital banners that carry your brand consistently.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
-        <a href="services.html#qr-integration" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">QR Code Integration</span>
-            <span class="text-sm text-charcoal/70">Connecting your print materials straight through to digital pages.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
-        <a href="services.html#quote-forms" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">Contact &amp; Quote Request Forms</span>
-            <span class="text-sm text-charcoal/70">Custom enquiry forms so customers can reach you directly.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
-        <a href="services.html#ecommerce" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">E-commerce Websites</span>
-            <span class="text-sm text-charcoal/70">Online stores and checkout pages built to sell.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
-        <a href="services.html#care-plans" class="reveal group flex items-center justify-between gap-6 py-6 transition-transform duration-500 hover:translate-x-1.5">
-          <span>
-            <span class="font-display text-xl text-ink block">Ongoing Maintenance &amp; Care Plans</span>
-            <span class="text-sm text-charcoal/70">Monthly care to keep your site secure, updated, and fast.</span>
-          </span>
-          <span class="text-brass-dark shrink-0 transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-        </a>
+      <div class="mt-14">
+        <div class="step-row reveal">
+          <span class="step-num" data-parallax="8">01</span>
+          <span class="step-title">Enquiry &amp; consultation</span>
+          <p class="step-desc">Tell us about your business and what you need — we'll come back with clear next steps, no jargon.</p>
+        </div>
+        <div class="step-row reveal">
+          <span class="step-num" data-parallax="8">02</span>
+          <span class="step-title">Concept &amp; direction</span>
+          <p class="step-desc">We propose a design direction rooted in your brand, before committing to a full build.</p>
+        </div>
+        <div class="step-row reveal">
+          <span class="step-num" data-parallax="8">03</span>
+          <span class="step-title">Design &amp; build</span>
+          <p class="step-desc">Your site or print piece is built with the same care whether it's your first project or your fifth.</p>
+        </div>
+        <div class="step-row reveal">
+          <span class="step-num" data-parallax="8">04</span>
+          <span class="step-title">Review &amp; refine</span>
+          <p class="step-desc">You review, we adjust — direct feedback, straight to the person doing the work.</p>
+        </div>
+        <div class="step-row reveal">
+          <span class="step-num" data-parallax="8">05</span>
+          <span class="step-title">Launch &amp; care</span>
+          <p class="step-desc">We launch, then optionally stay on with a care plan so it keeps performing.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO TEASER -->
-  <section class="py-24 md:py-32 bg-ivory-dim border-y border-stone">
-    <div class="max-w-6xl mx-auto px-6 md:px-8">
-      <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-        <div>
-          <p class="eyebrow">Selected Work</p>
-          <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 max-w-xl"><span class="mask-reveal"><span class="line-reveal">A studio built on craft, proven in practice.</span></span></h2>
-        </div>
-        <p class="max-w-sm text-sm text-charcoal/70 leading-relaxed">Our first client project — a dental practice website — launches soon. Until then, here's the calibre of work you can expect.</p>
-      </div>
-
-      <div class="mt-14 grid md:grid-cols-3 gap-8">
-        <!-- Website mockup -->
-        <div class="reveal">
-          <div class="frame-browser" data-tilt>
-            <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-            <div class="p-5 bg-ivory">
-              <div class="flex items-center justify-between mb-4">
-                <div class="font-display text-sm text-ink">Marram &amp; Co.</div>
-                <div class="flex gap-2">
-                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
-                  <div class="w-6 h-1.5 bg-stone rounded-full"></div>
-                </div>
-              </div>
-              <div class="h-20 rounded-sm bg-ink-2 mb-3"></div>
-              <div class="h-2.5 w-2/3 bg-stone rounded-full mb-2"></div>
-              <div class="h-2.5 w-1/2 bg-stone rounded-full mb-4"></div>
-              <div class="h-6 w-24 rounded-sm bg-brass"></div>
-            </div>
-          </div>
-          <div class="mt-4 flex items-center justify-between">
-            <span class="font-display text-ink">Website Design</span>
-            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
-          </div>
-        </div>
-
-        <!-- Poster mockup -->
-        <div class="reveal">
-          <div class="frame-print bg-ink rounded-sm p-6 aspect-[3/4] flex flex-col justify-between" data-tilt>
-            <p class="eyebrow on-dark">Harebell &amp; Co Market</p>
-            <div>
-              <p class="font-display text-3xl text-ivory leading-tight">Summer<br/>Night<br/>Market</p>
-              <div class="w-10 h-[2px] bg-brass my-4"></div>
-              <p class="text-xs text-ivory/70 tracking-wide">14 JUNE &middot; NORFOLK QUAY</p>
-            </div>
-          </div>
-          <div class="mt-4 flex items-center justify-between">
-            <span class="font-display text-ink">Poster Design</span>
-            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
-          </div>
-        </div>
-
-        <!-- QR mockup -->
-        <div class="reveal">
-          <div class="card p-6 aspect-[3/4] flex flex-col items-center justify-center gap-4 bg-ivory" data-tilt>
-            <div class="grid grid-cols-5 gap-[3px] w-24 h-24 p-2 bg-ink rounded-sm">
-              <div class="bg-ivory col-span-2 row-span-2 rounded-[1px]"></div>
-              <div class="bg-ivory col-span-1 row-span-1 rounded-[1px] col-start-5"></div>
-              <div class="bg-ivory col-span-2 row-span-2 rounded-[1px] col-start-4 row-start-4"></div>
-              <div class="bg-ivory col-span-1 row-span-1 rounded-[1px] col-start-1 row-start-5"></div>
-              <div class="bg-brass col-span-1 row-span-1 rounded-[1px] col-start-3 row-start-3"></div>
-            </div>
-            <p class="text-xs text-charcoal/60 text-center">Menu &rarr; scan &rarr; ordering page</p>
-          </div>
-          <div class="mt-4 flex items-center justify-between">
-            <span class="font-display text-ink">QR Integration</span>
-            <span class="tag-concept"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal mt-14 text-center">
-        <a href="portfolio.html" class="btn btn-forest magnetic">See the Full Portfolio</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT TEASER -->
-  <section class="py-24 md:py-32">
-    <div class="max-w-4xl mx-auto px-6 md:px-8 text-center">
-      <div class="reveal">
-        <p class="eyebrow">Why Wrenfield</p>
-        <p class="font-display text-3xl md:text-4xl leading-[1.35] tracking-[-0.01em] mt-6 text-ink">
-          "Independent businesses deserve the same care and craft as the brands they compete with — without losing the personal attention a big agency can't offer."
-        </p>
-        <a href="about.html" class="inline-block mt-8 nav-link">More about the studio &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="py-24 md:py-32 bg-ivory-dim border-y border-stone">
-    <div class="max-w-6xl mx-auto px-6 md:px-8">
+  <!-- SUPPORT + TESTIMONIALS -->
+  <section class="panel-forest py-24 md:py-32 border-y border-ivory/10">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8 relative">
       <div class="reveal text-center max-w-xl mx-auto">
-        <p class="eyebrow">Client Stories</p>
-        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">Trusted by businesses who care about the details.</span></span></h2>
+        <p class="eyebrow">Support, Always</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4"><span class="mask-reveal"><span class="line-reveal">Care that doesn't stop at launch.</span></span></h2>
       </div>
-      <div class="mt-14 grid md:grid-cols-3 gap-8">
-        <blockquote class="reveal card p-8" data-tilt>
+
+      <div class="mt-14 grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <a href="services.html#care-plans" class="reveal support-card p-7 pb-16 block">
+          <p class="font-display text-xl text-ivory">Care Plans</p>
+          <p class="mt-3 text-sm text-ivory/65 leading-relaxed">Monthly retainer packages keep your site updated, secure, backed up, and performing well — set up once, cared for continuously.</p>
+          <span class="arrow-btn" aria-hidden="true">&rarr;</span>
+        </a>
+        <a href="about.html" class="reveal support-card p-7 pb-16 block">
+          <p class="font-display text-xl text-ivory">One Point of Contact</p>
+          <p class="mt-3 text-sm text-ivory/65 leading-relaxed">No account managers, no hand-offs between departments — the person who designs your site is the person you speak to.</p>
+          <span class="arrow-btn" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="mt-24 reveal text-center max-w-xl mx-auto">
+        <p class="eyebrow">Client Stories</p>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4">Trusted by businesses who care about the details.</h2>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-8" data-parallax="10">
+        <blockquote class="reveal card p-8">
           <span class="font-display text-4xl text-brass">&ldquo;</span>
-          <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">Wrenfield redid our site and menus in a fortnight. Bookings went up almost immediately — customers say we finally look like the restaurant we actually are.</p>
+          <p class="mt-2 text-[0.95rem] leading-relaxed text-ivory/85">Wrenfield redid our site and menus in a fortnight. Bookings went up almost immediately — customers say we finally look like the restaurant we actually are.</p>
           <footer class="mt-5 text-sm">
-            <span class="font-display text-ink">Eleanor Hargrove</span>
-            <span class="block text-charcoal/60">Owner, The Corn Exchange Kitchen</span>
+            <span class="font-display text-ivory">Eleanor Hargrove</span>
+            <span class="block text-ivory/60">Owner, The Corn Exchange Kitchen</span>
           </footer>
         </blockquote>
-        <blockquote class="reveal card p-8" data-tilt>
+        <blockquote class="reveal card p-8">
           <span class="font-display text-4xl text-brass">&ldquo;</span>
-          <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">Quietly professional from the first call. No jargon, no upselling — just a website and print pack that made us look established overnight.</p>
+          <p class="mt-2 text-[0.95rem] leading-relaxed text-ivory/85">Quietly professional from the first call. No jargon, no upselling — just a website and print pack that made us look established overnight.</p>
           <footer class="mt-5 text-sm">
-            <span class="font-display text-ink">Michael Tanner</span>
-            <span class="block text-charcoal/60">Director, Tanner &amp; Sons Joinery</span>
+            <span class="font-display text-ivory">Michael Tanner</span>
+            <span class="block text-ivory/60">Director, Tanner &amp; Sons Joinery</span>
           </footer>
         </blockquote>
-        <blockquote class="reveal card p-8" data-tilt>
+        <blockquote class="reveal card p-8">
           <span class="font-display text-4xl text-brass">&ldquo;</span>
-          <p class="mt-2 text-[0.95rem] leading-relaxed text-charcoal/85">The care plan means I never think about the site anymore — it just works. Worth every penny for the peace of mind alone.</p>
+          <p class="mt-2 text-[0.95rem] leading-relaxed text-ivory/85">The care plan means I never think about the site anymore — it just works. Worth every penny for the peace of mind alone.</p>
           <footer class="mt-5 text-sm">
-            <span class="font-display text-ink">Priya Sethi</span>
-            <span class="block text-charcoal/60">Founder, Sethi &amp; Bloom Studio</span>
+            <span class="font-display text-ivory">Priya Sethi</span>
+            <span class="block text-ivory/60">Founder, Sethi &amp; Bloom Studio</span>
           </footer>
         </blockquote>
       </div>
@@ -330,14 +477,30 @@
   <!-- CTA BANNER -->
   <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
     <div class="panel-glow"></div>
-    <div class="max-w-4xl mx-auto px-6 md:px-8 py-24 md:py-28 text-center relative">
+    <div class="max-w-2xl mx-auto px-6 md:px-8 pt-24 md:pt-28 text-center relative">
       <p class="eyebrow on-dark reveal">Get Started</p>
       <h2 class="font-display text-4xl md:text-5xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Ready to look established?</span></span></h2>
       <p class="reveal mt-6 text-ivory/75 max-w-md mx-auto">Tell us about your business and we'll come back to you with clear next steps — no pressure, no jargon.</p>
       <a href="contact.html" class="reveal btn btn-brass magnetic mt-10">Request a Quote</a>
     </div>
+    <div class="reveal max-w-3xl mx-auto px-6 md:px-8 relative mt-14 pb-20 md:pb-24">
+      <div class="screen-card on-dark" data-parallax="14">
+        <span class="screen-pill"><img src="/assets/img/mark.svg" class="w-3 h-3" alt="" aria-hidden="true" />Concept &mdash; Marram &amp; Co.</span>
+        <div class="p-6 md:p-10 pt-16 bg-ivory">
+          <div class="h-32 md:h-48 rounded-2xl mb-4 kb">
+            <div class="kb-inner bg-forest-2"></div>
+          </div>
+          <div class="flex gap-3">
+            <div class="h-3 w-1/3 bg-stone rounded-full"></div>
+            <div class="h-3 w-1/4 bg-stone rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 </main>
 
 <!-- FOOTER -->

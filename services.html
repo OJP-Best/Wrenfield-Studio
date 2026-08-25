@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Services — Wrenfield Studio</title>
 <meta name="description" content="Website design, print, QR integration, e-commerce, and ongoing care plans for independent UK businesses. Every project quoted individually — request a free quote." />
-<meta name="theme-color" content="#0f2438" />
+<meta name="theme-color" content="#0f2119" />
 <link rel="icon" type="image/svg+xml" href="/assets/img/mark.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
           ink: '#0f2438', 'ink-2': '#16324d', 'ink-deep': '#081420',
           brass: '#c6a15b', 'brass-light': '#e4c989', 'brass-dark': '#9c7a3e',
           ivory: '#faf6ee', 'ivory-dim': '#f1e9d8',
-          charcoal: '#1f1f1f', forest: '#1f3a2e',
+          charcoal: '#1f1f1f', forest: '#1f3a2e', 'forest-2': '#2b503e', 'forest-deep': '#0f2119',
           stone: '#e1d8c4', 'stone-2': '#cbb99b'
         },
         fontFamily: {
@@ -32,14 +32,14 @@
 </script>
 <link rel="stylesheet" href="/assets/css/site.css" />
 </head>
-<body class="bg-ivory text-charcoal">
-<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-brass focus:text-ink focus:px-4 focus:py-2">Skip to content</a>
+<body class="bg-forest-deep text-ivory">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-brass focus:text-forest-deep focus:px-4 focus:py-2">Skip to content</a>
 
 <header class="site-nav">
   <div class="max-w-6xl mx-auto px-6 md:px-8 flex items-center justify-between h-20">
     <a href="index.html" class="flex items-center gap-3">
       <img src="/assets/img/mark.svg" alt="Wrenfield Studio" class="h-9 w-9" />
-      <span class="font-display text-lg tracking-wide text-ink">WRENFIELD <span class="text-brass-dark">STUDIO</span></span>
+      <span class="font-display text-lg tracking-wide text-ivory">WRENFIELD <span class="text-brass-dark">STUDIO</span></span>
     </a>
     <nav class="hidden md:flex items-center gap-10">
       <a href="index.html" class="nav-link">Home</a>
@@ -52,13 +52,13 @@
       <a href="contact.html" class="btn btn-brass magnetic">Request a Quote</a>
     </div>
     <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="md:hidden relative w-8 h-6">
-      <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ink"></span>
-      <span class="hamburger-line mid absolute left-0 top-1/2 -translate-y-1/2 w-8 h-[1.5px] bg-ink"></span>
-      <span class="hamburger-line bottom absolute left-0 bottom-0 w-8 h-[1.5px] bg-ink"></span>
+      <span class="hamburger-line top absolute left-0 top-0 w-8 h-[1.5px] bg-ivory"></span>
+      <span class="hamburger-line mid absolute left-0 top-1/2 -translate-y-1/2 w-8 h-[1.5px] bg-ivory"></span>
+      <span class="hamburger-line bottom absolute left-0 bottom-0 w-8 h-[1.5px] bg-ivory"></span>
     </button>
   </div>
   <div id="mobile-panel" class="md:hidden px-6 pb-2">
-    <div class="flex flex-col gap-4 py-4 border-t border-stone">
+    <div class="flex flex-col gap-4 py-4 border-t border-ivory/10">
       <a href="index.html" class="nav-link">Home</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="portfolio.html" class="nav-link">Portfolio</a>
@@ -71,8 +71,9 @@
 
 <main id="main">
   <!-- PAGE HERO -->
-  <section class="panel-ink relative">
+  <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
     <div class="panel-glow"></div>
     <div class="max-w-4xl mx-auto px-6 md:px-8 pt-20 pb-16 md:pt-28 md:pb-20 relative">
       <p class="eyebrow on-dark reveal" style="transition-delay:.05s">Services</p>
@@ -82,15 +83,17 @@
   </section>
 
   <!-- SERVICE 1 -->
-  <section id="website-design" class="py-20 md:py-24 border-b border-stone scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="website-design" class="panel-forest py-20 md:py-24 border-b border-ivory/10 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">Website Design &amp; Development</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">A website that works as hard as you do.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">A website that works as hard as you do.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">Custom-designed, professionally built websites for independent businesses — no templates stretched to fit, no generic themes. Every site is designed around how your business actually works and what your customers need to find.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">Custom-designed, professionally built websites for independent businesses — no templates stretched to fit, no generic themes. Every site is designed around how your business actually works and what your customers need to find.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Bespoke design, built around your brand</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Mobile-first, fast-loading pages</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Clear calls to action that turn visitors into enquiries</li>
@@ -102,15 +105,17 @@
   </section>
 
   <!-- SERVICE 2 -->
-  <section id="poster-design" class="py-20 md:py-24 border-b border-stone bg-ivory-dim scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="poster-design" class="panel-forest py-20 md:py-24 border-b border-ivory/10 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">Poster Design</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">Print that gets noticed.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Print that gets noticed.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">Print-ready posters for promotions, events, and campaigns — designed to hold attention on a noticeboard or shop window, not just look good on a screen.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">Print-ready posters for promotions, events, and campaigns — designed to hold attention on a noticeboard or shop window, not just look good on a screen.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Concept and design for any format or print size</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Print-ready files, sized and set up correctly</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Consistent with your existing brand and website</li>
@@ -122,15 +127,17 @@
   </section>
 
   <!-- SERVICE 3 -->
-  <section id="banner-design" class="py-20 md:py-24 border-b border-stone scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="banner-design" class="panel-forest py-20 md:py-24 border-b border-ivory/10 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">Banner Design</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">Consistent branding, wherever you're seen.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Consistent branding, wherever you're seen.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">Physical banners for shopfronts and events, and digital banners for online ads — both designed to carry your brand consistently across every space you show up in.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">Physical banners for shopfronts and events, and digital banners for online ads — both designed to carry your brand consistently across every space you show up in.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Outdoor and event banner design, print-ready</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Digital ad banners, sized for web placements</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Brand-consistent templates you can reuse</li>
@@ -142,15 +149,17 @@
   </section>
 
   <!-- SERVICE 4 -->
-  <section id="qr-integration" class="py-20 md:py-24 border-b border-stone bg-ivory-dim scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="qr-integration" class="panel-forest py-20 md:py-24 border-b border-ivory/10 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">QR Code Integration</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">Connecting your print straight to your digital.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Connecting your print straight to your digital.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">A QR code on a poster or menu is only useful if it leads somewhere good. We design and build the page it connects to, so print and digital work as one.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">A QR code on a poster or menu is only useful if it leads somewhere good. We design and build the page it connects to, so print and digital work as one.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Custom QR codes matched to your brand</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>A dedicated landing page, menu, or offer page to link to</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Simple to update whenever your offer changes</li>
@@ -162,15 +171,17 @@
   </section>
 
   <!-- SERVICE 5 -->
-  <section id="quote-forms" class="py-20 md:py-24 border-b border-stone scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="quote-forms" class="panel-forest py-20 md:py-24 border-b border-ivory/10 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">Contact &amp; Quote Request Forms</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">Make it easy for customers to reach you.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Make it easy for customers to reach you.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">A custom-built enquiry or quote request form, so your customers can get in touch or request pricing directly from your site — no back-and-forth over the phone required.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">A custom-built enquiry or quote request form, so your customers can get in touch or request pricing directly from your site — no back-and-forth over the phone required.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Custom-built forms matched to your services</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Enquiries sent straight to your inbox</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Spam protection built in</li>
@@ -182,15 +193,17 @@
   </section>
 
   <!-- SERVICE 6 -->
-  <section id="ecommerce" class="py-20 md:py-24 border-b border-stone bg-ivory-dim scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="ecommerce" class="panel-forest py-20 md:py-24 border-b border-ivory/10 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">E-commerce Websites</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">Sell online, without the overhead of a big platform.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">Sell online, without the overhead of a big platform.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">Online stores and checkout pages for businesses ready to sell products, take bookings, or collect deposits online — built to be simple to manage and easy for customers to buy from.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">Online stores and checkout pages for businesses ready to sell products, take bookings, or collect deposits online — built to be simple to manage and easy for customers to buy from.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Product pages and checkout, built around your catalogue</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Secure payment processing</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Simple order and stock management</li>
@@ -202,15 +215,17 @@
   </section>
 
   <!-- SERVICE 7 -->
-  <section id="care-plans" class="py-20 md:py-24 scroll-mt-20">
-    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16">
+  <section id="care-plans" class="panel-forest py-20 md:py-24 scroll-mt-20">
+    <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
+    <div class="max-w-5xl mx-auto px-6 md:px-8 grid md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-16 relative">
       <div class="reveal">
         <p class="eyebrow">Ongoing Maintenance &amp; Care Plans</p>
-        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ink"><span class="mask-reveal"><span class="line-reveal">So you never have to think about your website again.</span></span></h2>
+        <h2 class="font-display text-3xl md:text-4xl tracking-[-0.01em] mt-4 text-ivory"><span class="mask-reveal"><span class="line-reveal">So you never have to think about your website again.</span></span></h2>
       </div>
       <div class="reveal">
-        <p class="leading-relaxed text-charcoal/85">A monthly care plan to keep your site updated, secure, backed up, and performing well — so small issues get caught before they become expensive ones.</p>
-        <ul class="mt-6 space-y-3 text-sm text-charcoal/80">
+        <p class="leading-relaxed text-ivory/85">A monthly care plan to keep your site updated, secure, backed up, and performing well — so small issues get caught before they become expensive ones.</p>
+        <ul class="mt-6 space-y-3 text-sm text-ivory/80">
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Regular software and security updates</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Automated backups</li>
           <li class="flex gap-3"><span class="text-brass-dark">—</span>Uptime and performance monitoring</li>
@@ -224,6 +239,7 @@
   <!-- CTA BANNER -->
   <section class="panel-forest relative">
     <div class="grain"></div>
+    <div class="motion-field" aria-hidden="true"><span class="blob-a"></span><span class="blob-b"></span></div>
     <div class="panel-glow"></div>
     <div class="max-w-3xl mx-auto px-6 md:px-8 py-20 md:py-24 text-center relative">
       <p class="reveal eyebrow on-dark">No Price Lists, No Guesswork</p>
