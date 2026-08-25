@@ -106,6 +106,9 @@
       <!-- FORM -->
       <div class="reveal">
         <form id="quote-form" class="card p-6 md:p-8 space-y-5">
+          <input type="hidden" name="access_key" value="d437c617-93f2-430e-9c27-10005f319135" />
+          <input type="hidden" name="subject" value="New quote request — Wrenfield Studio" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
               <label for="name" class="field-label">Name</label>
@@ -143,8 +146,13 @@
         </form>
 
         <div id="form-success" class="hidden card p-8 text-center">
-          <p class="font-display text-2xl text-ivory">Almost there — send it from your email app.</p>
-          <p class="mt-3 text-sm text-ivory/70">Your email app should have opened in a new tab with your enquiry filled in. Just hit send there to reach us. If nothing opened, email us directly at <a href="mailto:wrenfieldstudio121@gmail.com" class="underline hover:text-brass-light">wrenfieldstudio121@gmail.com</a>.</p>
+          <p class="font-display text-2xl text-ivory">Thank you — enquiry received.</p>
+          <p class="mt-3 text-sm text-ivory/70">We read every message personally and reply within one working day.</p>
+        </div>
+
+        <div id="form-error" class="hidden card p-8 text-center">
+          <p class="font-display text-2xl text-ivory">Something went wrong.</p>
+          <p class="mt-3 text-sm text-ivory/70">Please email us directly at <a href="mailto:wrenfieldstudio121@gmail.com" class="underline hover:text-brass-light">wrenfieldstudio121@gmail.com</a> and we'll get back to you.</p>
         </div>
       </div>
     </div>
@@ -202,29 +210,28 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      var name = form.name.value.trim();
-      var email = form.email.value.trim();
-      var business = form.business.value.trim();
-      var service = form.service.value.trim();
-      var details = form.details.value.trim();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
 
-      var subject = 'Quote request — ' + business;
-      var body =
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        'Business: ' + business + '\n' +
-        'Service interested in: ' + service + '\n\n' +
-        'Project details:\n' + details;
-
-      var mailto =
-        'mailto:wrenfieldstudio121@gmail.com' +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent(body);
-
-      window.location.href = mailto;
-
-      form.classList.add('hidden');
-      document.getElementById('form-success').classList.remove('hidden');
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      })
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+          if (data.success) {
+            form.classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+          } else {
+            throw new Error(data.message || 'Submission failed');
+          }
+        })
+        .catch(function () {
+          form.classList.add('hidden');
+          document.getElementById('form-error').classList.remove('hidden');
+        });
     });
   }
 </script>
